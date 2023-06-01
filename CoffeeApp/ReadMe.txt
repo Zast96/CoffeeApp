@@ -1,0 +1,1 @@
+Hey! To see this project, create an angular project and replace the original app and assets folders with those.

@@ -1,0 +1,193 @@
+.search-bar-body {
+  display: flex;
+  justify-content: center;
+  /* Center the search bar horizontally */
+  align-items: center;
+  width: calc(72% - 10px);
+  /* Set the width to 72% minus the gap between cards */
+  max-width: calc(2 * (40% + 20px));
+  position: absolute;
+  width: 310px;
+  height: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Center the search bar horizontally */
+  top: 208px;
+
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 16px;
+}
+
+
+.search-bar {
+  width: 105px;
+  height: 15px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #FFFFFF;
+
+  opacity: 0.33;
+
+  /* Inside auto layout */
+
+  display: flex;
+  order: 1;
+  flex-grow: 0;
+
+}
+
+.search-button {
+  box-sizing: border-box;
+  margin-left: -20px;
+  background: transparent;
+  /* Set the background color to orange */
+  border: none;
+  /* Remove the border */
+  min-height: 43px;
+  width: 39px;
+  cursor: pointer;
+  /* Add cursor style to indicate it's clickable */
+}
+
+.search-button i {
+  color: #D98046;
+  /* Set the color of the icon to the same color of the figma one instead of importing the icon*/
+  font-size: 24px;
+}
+
+.search-bar-body input[type="text"] {
+  padding-right: 30px;
+  border: none;
+  background: rgba(255, 255, 255, 0.001);
+  transform: translatex(8px) translatey(0px);
+  min-height: 41px;
+  width: 212px !important;
+  height: 41px;
+
+
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  width: 192px;
+  height: 64px;
+  left: 44px;
+  top: 115px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+  /* or 107% */
+
+  color: #FFFFFF;
+}
+
+.subheader {
+  display: flex;
+  position: absolute;
+  width: 192px;
+  height: 64px;
+  left: 44px;
+  top: 115px;
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 32px;
+
+
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+
+.highlight {
+  color: #D98046;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+
+.top-left-icon {
+  position: absolute;
+  top: 40px;
+  left: 44px;
+
+}
+
+
+.top-right-icon {
+  position: absolute;
+  top: 40px;
+  right: 44px;
+
+}
+
+.top-left-icon,
+.top-right-icon {
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 48px;
+  color: transparent;
+  background: linear-gradient(143.19deg, #222931 4.86%, #11141B 91.25%);
+  border-radius: 16px;
+}
+
+.dot-icons-topL {
+  position: relative;
+  bottom: 6px;
+  left: 11px;
+
+}
+
+.dot-icons-topR {
+  position: relative;
+  bottom: 6px;
+  right: -14px;
+
+}
+
+.dot-icons-bottomL {
+  position: relative;
+  bottom: -6px;
+  right: 1px;
+
+}
+
+.dot-icons-bottomR {
+  position: relative;
+  bottom: -6px;
+  right: -2px;
+
+}
+
+.avatar {
+  position: relative;
+  right: -6px;
+  height: 46px;
+}
+
+
+
+.blur {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -136px;
+  top: 271px;
+  background: rgba(217, 128, 70, 0.25);
+  filter: blur(128px);
+  border-radius: 500px;
+}

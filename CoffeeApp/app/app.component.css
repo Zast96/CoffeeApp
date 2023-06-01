@@ -1,0 +1,28 @@
+.toolbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: rgba(13, 16, 21, 0.96);
+    backdrop-filter: blur(2px);
+    color: white;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.top-image {
+    position: absolute;
+    left: 87.8%;
+    top: 33%;
+
+
+}
+
+.toolbar img:not(.top-image) {
+    margin: auto;
+}

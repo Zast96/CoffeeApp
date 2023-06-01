@@ -1,0 +1,31 @@
+<!-- Iterate over the searchedCoffeeList array and create a card for each coffee -->
+<div class="card-container">
+  <div class="card-row">
+    <div class="card coffee" *ngFor="let coffee of searchedCoffeeList">
+
+      <!-- Display the coffee rating -->
+      <div class="rate-box"></div>
+      <span class="rate-value">4.5</span>
+
+      <!-- Display the coffee image -->
+      <img [src]="coffee.assets.thumbnail.large.uri" alt="API Image" class="card-image">
+
+      <!-- Display a star image for rating -->
+      <img src="assets/star.png" alt="rate-star" class="rate-star">
+
+      <!-- Display the coffee details -->
+      <div class="card-body">
+        <h3 class="card-title">{{ coffee.name }}</h3>
+        <p class="card-text">{{ coffee.formCode }}</p>
+        <p class="card-price">2.45</p>
+      </div>
+
+      <!-- Add the coffee to the cart on button click -->
+      <div class="add-button">
+        <button class="add-button-icon" (click)="addToCart(coffee)">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<!-- A div element with the class "blur" -->
+<div class="blur"></div>
+
+<!-- A container div -->
+<div class="container">
+  <div>
+    <!-- Header with the text "Find the best" -->
+    <h1 class="header">Find the best</h1>
+  </div>
+  <div>
+    <!-- Subheader with the text "Coffee for you" and the word "Coffee" highlighted -->
+    <h1 class="subheader"><span class="highlight">Coffee</span> for you</h1>
+  </div>
+</div>
+
+<!-- Search bar section -->
+<div class="search-bar-body">
+  <!-- Button for submitting the search -->
+  <button class="search-button" type="submit" (click)="onSubmit()">
+    <!-- Search icon -->
+    <i class="fa fa-search" aria-hidden="true"></i>
+  </button>
+
+  <!-- Input field for the search term -->
+  <input class="search-bar" type="text" name="search" [(ngModel)]="searchTerm" placeholder="Find your Coffee..."
+    (keyup.enter)="onSearch()" (input)="onSearchInput()" />
+</div>
+
+<!-- Icons container section -->
+<div class="icons-container">
+  <!-- Top left icon section -->
+  <div class="top-left-icon">
+    <!-- Dot icons -->
+    <img src="assets/ellipse.png" class="dot-icons-topL">
+    <img src="assets/ellipse.png" class="dot-icons-topR">
+    <img src="assets/ellipse.png" class="dot-icons-bottomL">
+    <img src="assets/ellipse.png" class="dot-icons-bottomR">
+    <!-- Square icon -->
+    <i class="fa-solid fa-square"></i>
+  </div>
+  <!-- Top right icon section -->
+  <div class="top-right-icon">
+    <!-- Avatar image -->
+    <img src="assets/avatar.png" class="avatar">
+    <!-- Square icon -->
+    <i class="fa-solid fa-square"></i>
+  </div>
+</div>
+
+<!-- App-coffee component with input and output bindings -->
+<app-coffee [coffeeData]="getCoffeeData()" [searchedCoffeeList]="searchedCoffeeList"
+  (filteredCoffeeListChange)="onFilteredCoffeeListChange($event)"></app-coffee>
